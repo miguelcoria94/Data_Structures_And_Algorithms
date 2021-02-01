@@ -1,5 +1,4 @@
 Data Structures
-
     - Arrays
     - Stacks
     - Queues
