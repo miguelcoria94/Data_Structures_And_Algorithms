@@ -21,3 +21,4 @@ Operations on Data Structures
     - Traversal(Processed)
     - Searching
     - Sorting
+    - Access
