@@ -15,4 +15,9 @@ Algorithms
     - BFS + DFS
     - Recursion
 
-    
+Operations on Data Structures
+    - Insertion
+    - Deletion
+    - Traversal(Processed)
+    - Searching
+    - Sorting
