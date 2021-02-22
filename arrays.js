@@ -11,3 +11,7 @@ console.log(strings)
 strings.unshift("1")
 
 console.log(strings)
+
+console.log()
+
+// unshift moves the whole array
