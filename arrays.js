@@ -8,3 +8,6 @@ strings.pop()
 
 console.log(strings)
 
+strings.unshift("1")
+
+console.log(strings)
