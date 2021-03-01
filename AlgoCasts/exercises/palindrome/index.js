@@ -12,7 +12,12 @@ function palindrome(str) {
 
     regularStr = str.split("")
 
-    for (let i = 0; i < reverseStr.length)
+    for (let i = 0; i < reverseStr.length; i++){
+        if (reverseStr[i] !== regularStr[i]) {
+            return false
+        }
+    }
+    return true
 
 }
 
