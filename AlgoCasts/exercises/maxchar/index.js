@@ -9,7 +9,7 @@ function maxChar(str) {
     let stringArray = str.split("")
     let counter = {}
     for (let i = 0; i < stringArray.length; i++){
-        if (counter[stringArray[i]] === undefined) {
+        if (!counter[stringArray[i]]) {
             counter[stringArray[i]] = 1
         } else {
             counter[stringArray[i]] += 1;
