@@ -8,6 +8,10 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+function reverseInt(n) {
+    let myNum = toString(n)
+    return 
+
+}
 
 module.exports = reverseInt;
