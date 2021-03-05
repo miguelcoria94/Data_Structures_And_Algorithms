@@ -11,8 +11,14 @@
 // Test
 
 function anagrams(stringA, stringB) {
+    const refinedA = stringA.replace(/[^\w]/g, "").toLowerCase()
+    const refinedB = stringB.replace(/[^\w]/g, "").toLowerCase()
     const mapone = {}
     const maptwo = {}
+
+    console.log(refinedA)
+    console.log(refinedB)
+
 }
 
 module.exports = anagrams;
