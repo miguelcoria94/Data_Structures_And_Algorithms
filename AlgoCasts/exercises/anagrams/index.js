@@ -35,8 +35,17 @@ function anagrams(stringA, stringB) {
             maptwo[element] += 1
         }
     });
-    console.log(mapone)
-    console.log(maptwo)
+
+    if (Object.entries(mapone).length !== Object.entries(maptwo).length) {
+        return false
+    }
+
+    for (const prop in mapone) {
+        if (mapone[prop] !== maptwo[prop]) {
+            return false
+        }
+        return true
+    }
 
 }
 
