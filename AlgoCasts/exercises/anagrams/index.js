@@ -10,14 +10,33 @@
 
 // Test
 
+function normalizeString(string) {
+    return string.replace(/[^\w]/g, "").toLowerCase()
+}
+
 function anagrams(stringA, stringB) {
-    const refinedA = stringA.replace(/[^\w]/g, "").toLowerCase()
-    const refinedB = stringB.replace(/[^\w]/g, "").toLowerCase()
+    const refinedA = normalizeString(stringA).split("")
+    const refinedB = normalizeString(stringB).split("")
     const mapone = {}
     const maptwo = {}
 
-    console.log(refinedA)
-    console.log(refinedB)
+    refinedA.forEach(element => {
+        if (mapone[element] === undefined) {
+            mapone[element] = 1
+        } else {
+            mapone[element] += 1
+        }
+    });
+
+    refinedB.forEach(element => {
+        if (maptwo[element] === undefined) {
+            maptwo[element] = 1
+        } else {
+            maptwo[element] += 1
+        }
+    });
+    console.log(mapone)
+    console.log(maptwo)
 
 }
 
