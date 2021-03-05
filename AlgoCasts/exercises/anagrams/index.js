@@ -10,6 +10,9 @@
 
 // Test
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+    const mapone = {}
+    const maptwo = {}
+}
 
 module.exports = anagrams;
