@@ -15,13 +15,18 @@
 //       '#####'
 
 function pyramid(n) {
-    let counter = 1
-    let tempString = ""
-
-    for (let i = 0; i < (n + 1); i++) {
-        tempString = " ".repeat(n - (counter)) + "#".repeat(counter) + " ".repeat(n - counter)
-        counter++
-        console.log(tempString)
+    let columns = 2 * n - 1
+    let midpoint = Math.floor(columns / 2)
+    for (let i = 0; i < n; i++){
+        let row = ""
+        for (let j = 0; j < columns; j++){
+            if (midpoint - i <= j && midpoint + i >= j) {
+                row += "#"
+            } else {
+                row += " "
+            }
+        }
+        console.log(row)
     }
 }
 
