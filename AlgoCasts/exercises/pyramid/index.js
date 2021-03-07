@@ -23,7 +23,7 @@ function pyramid(n) {
             if (midpoint - i <= j && midpoint + i >= j) {
                 row += "#"
             } else {
-                row += " "
+                row +=" "
             }
         }
         console.log(row)
