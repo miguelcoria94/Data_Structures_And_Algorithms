@@ -1,5 +1,13 @@
 function countUniqueValues(array) {
-    
+    let counter = {}
+    for (let i = 0; i < array.length; i++){
+        if (counter[array[i]] === undefined) {
+            counter[array[i]] = 1
+        } else {
+            counter[array[i]] += 1
+        }
+    }
+    console.log(Object.values(counter).length)
 }
 
 countUniqueValues([1, 1, 1, 1, 1, 2])
